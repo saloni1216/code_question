@@ -1,0 +1,20 @@
+Python
+a=set(nums)
+ans=list(a)
+x=max(ans)
+y=min(ans)
+return math.gcd(x,y)
+
+//math.gcd is inbuilt function in python which is find greatest common divisor
+
+C++
+int findGCD(vector<int>& nums) {
+   int maxi=INT_MIN;
+    int mini=INT_MAX;
+    for(int i=0;i<nums.size();i++){
+        maxi=max(maxi,nums[i]);
+        mini=min(mini,nums[i]);
+    }
+    
+    return __gcd(maxi,mini);
+// _gcd(maxi, mini) is inbuilt function in c++
